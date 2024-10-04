@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Regina - Masters of Science in Computer Science (Data Science)</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #004c2c, #00693c);
+            color: #fff;
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 4px solid #ffcc33;
+        }
+        header img {
+            height: 70px;
+            margin-right: 20px;
+        }
+        header .header-content {
+            display: flex;
+            align-items: center;
+        }
+        header h1 {
+            font-weight: 700;
+            font-size: 2rem;
+            margin: 0;
+        }
+        header .contact-info {
+            text-align: right;
+            font-size: 0.9rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            background-color: #00693c;
+        }
+        nav a {
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s, color 0.3s;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            background-color: #ffcc33;
+            color: #004c2c;
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+        }
+        .overview, .unique-section, .courses-section {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            margin-bottom: 30px;
+        }
+        .overview:hover, .unique-section:hover, .courses-section:hover {
+            transform: translateY(-5px);
+        }
+        .section-header {
+            font-size: 28px;
+            color: #00693c;
+            margin-bottom: 20px;
+            font-weight: bold;
+            border-bottom: 2px solid #ffcc33;
+            padding-bottom: 10px;
+        }
+        .overview p, .unique-section p, .courses-section p {
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+        .courses-list {
+            list-style: none;
+            padding: 0;
+        }
+        .courses-list li {
+            margin-bottom: 20px;
+        }
+        .course-title {
+            font-weight: bold;
+            color: #00693c;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .course-title:hover {
+            color: #004c2c;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #004c2c;
+            color: #fff;
+            margin-top: 30px;
+        }
+        .accordion {
+            background-color: #00693c;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1rem;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        .accordion:hover {
+            background-color: #ffcc33;
+            color: #004c2c;
+        }
+        .panel {
+            padding: 15px;
+            background-color: white;
+            max-height: none;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+        .panel ul {
+            list-style-type: disc;
+            margin: 15px;
+            padding-left: 20px;
+            color: #333;
+        }
+        .panel ul li {
+            margin-bottom: 10px;
+        }
+        .accordion-icon {
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/JsmGxF6/logo.png" alt="logo" border="0"></a>
+            <h1>Masters of Science in Computer Science (Data Science)</h1>
+        </div>
+        <div class="contact-info">
+            <p>Contact: datasci@uregina.ca</p>
+            <p>Phone: +1 (306) 555-6789</p>
+        </div>
+    </header>
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#admission">Admission</a>
+        <a href="#unique">Course Rationale</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="sidebar">
+            <button class="accordion"><img src="https://img.icons8.com/ios-filled/24/ffffff/suitcase.png" class="accordion-icon">Admission Information & Requirements</button>
+            <div class="panel">
+                <ul>
+                    <li>Bachelor's degree in computer science, statistics, or a related field.</li>
+                    <li>Minimum GPA of 3.0 in the last two years of study.</li>
+                    <li>Relevant work experience and demonstrated programming skills are advantageous.</li>
+                    <li>Statement of purpose detailing career goals, academic achievements, and reasons for pursuing this program.</li>
+                    <li>English proficiency required for international students (TOEFL, IELTS, or equivalent).</li>
+                    <li>Letters of recommendation from academic or professional supervisors.</li>
+                </ul>
+            </div>
+            <button class="accordion"><img src="https://img.icons8.com/ios-filled/24/ffffff/money.png" class="accordion-icon">Tuition & Financial Support</button>
+            <div class="panel">
+                <ul>
+                    <li>Financial support available in the form of scholarships, bursaries, and teaching assistantships.</li>
+                    <li>Graduate Scholarships program offers partial to full tuition coverage based on academic merit.</li>
+                    <li>Research assistantships for students working on faculty-led projects, providing financial support and valuable research experience.</li>
+                    <li>External funding opportunities, including government grants and industry-sponsored scholarships, may be available.</li>
+                </ul>
+            </div>
+            <button class="accordion"><img src="https://img.icons8.com/ios-filled/24/ffffff/suitcase.png" class="accordion-icon">Career Options</button>
+            <div class="panel">
+                <ul>
+                    <li>Data Scientist, Machine Learning Engineer, Business Intelligence Analyst, Data Engineer, AI Specialist.</li>
+                    <li>Opportunities in healthcare, finance, government agencies, and tech companies.</li>
+                    <li>Emphasis on practical skills and real-world projects ensures job readiness upon graduation.</li>
+                    <li>Strong foundation for those interested in pursuing a PhD in related fields.</li>
+                </ul>
+            </div>
+            <button class="accordion"><img src="https://img.icons8.com/ios-filled/24/ffffff/bar-chart.png" class="accordion-icon">Enrolment, Duration & Other Stats</button>
+            <div class="panel">
+                <ul>
+                    <li>Program duration: 2 years, including coursework and a final project.</li>
+                    <li>Flexible study options: full-time or part-time.</li>
+                    <li>Annual intake of approximately 30-40 students ensures personalized attention.</li>
+                    <li>Customizable curriculum through elective courses that align with career goals.</li>
+                </ul>
+            </div>
+            <button class="accordion"><img src="https://img.icons8.com/ios-filled/24/ffffff/compare.png" class="accordion-icon">Related Programs</button>
+            <div class="panel">
+                <ul>
+                    <li>PhD in Computer Science for those pursuing an academic or research-oriented career.</li>
+                    <li>Graduate Diploma in Data Science for professionals seeking to enhance their data science skills.</li>
+                    <li>Option to transition from MSc to PhD program upon demonstrating exceptional research capabilities.</li>
+                    <li>Graduate Diploma can serve as a stepping stone to the full MSc program.</li>
+                </ul>
+            </div>
+            <button class="accordion"><img src="https://img.icons8.com/ios-filled/24/ffffff/info.png" class="accordion-icon">Further Information</button>
+            <div class="panel">
+                <ul>
+                    <li>Visit the official university website for detailed program information and application guidelines.</li>
+                    <li>Attend information sessions (online or in-person) for insights into program structure, faculty, and research opportunities.</li>
+                    <li>Prospective students can contact the program coordinator for personalized guidance on the application process.</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="overview" id="overview">
+                <div class="section-header">Overview</div>
+                <p>The University of Regina offers a Masters of Science in Computer Science (Data Science) aimed at developing experts in data analysis, machine learning, and modern big data tools. This program combines academic rigor with hands-on practical experience to equip graduates for careers in data science across industries.</p>
+                <p>This program provides students with a solid foundation in data science concepts, including statistical modeling, machine learning, big data analytics, and data visualization. The curriculum is designed to balance theoretical knowledge with practical skills, giving students the opportunity to work on hands-on projects, collaborate with industry partners, and apply their learning to solve real-world problems.</p>
+                <p>Students will learn from experienced faculty who are actively engaged in cutting-edge research. The program's flexible structure allows students to tailor their learning experience by selecting electives that match their career goals, whether that involves data engineering, business analytics, or artificial intelligence. The University of Regina also offers a vibrant academic community with access to resources such as research labs, career services, and networking events, helping students to maximize their educational experience.</p>
+            </div>
+            <div class="unique-section" id="unique">
+                <div class="section-header">Course Rationale</div>
+                <p>Our program emphasizes practical learning through partnerships with industry, research opportunities, and a focus on ethical data practices. Students participate in real-world projects to understand how data science contributes to solving global challenges like climate change, healthcare, and more. Additionally, our emphasis on responsible data management and ethical AI ensures that graduates are well-prepared to make informed decisions that positively impact their communities.</p>
+            </div>
+            <div class="courses-section" id="courses">
+                <div class="section-header">Courses in This Program</div>
+                <ul class="courses-list">
+                    <li>
+                        <div class="course-title">First Semester (Fall)</div>
+                        <div class="course-description">
+                            <strong>CS 701: Introduction to Data Science & Analytics (3 credits)</strong> <br>
+                            <strong>CS 702: Database Management Systems for Data Science (3 credits)</strong>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-title">Second Semester (Winter)</div>
+                        <div class="course-description">
+                            <strong>CS 703: Statistical Methods for Data Science (3 credits)</strong><br>
+                            <strong>CS 704: Introduction to Machine Learning (3 credits)</strong>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-title">Third Semester (Spring/Summer)</div>
+                        <div class="course-description">
+                            <strong>CS 705: Deep Learning Foundations (3 credits)</strong><br>
+                            <strong>CS 706: Data Engineering & Big Data Technologies (3 credits)</strong>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-title">Fourth Semester (Fall)</div>
+                        <div class="course-description">
+                            <strong>CS 707: Data Visualization & Storytelling (3 credits)</strong> <br>
+                            <strong>CS 708: Ethical AI & Data Science Practices (3 credits)</strong>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-title">Fifth Semester (Winter)</div>
+                        <div class="course-description">
+                            <strong>CS 718: Data Science Seminar (0 credits)</strong> <br>
+                            <strong>CS 719: Data Science Project (6 credits)</strong>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 University of Regina</p>
+        <p>Contact: datasci@uregina.ca | Phone: +1 (306) 555-6789</p>
+    </footer>
+    <script>
+        const accordions = document.querySelectorAll('.accordion');
+        accordions.forEach(accordion => {
+            accordion.classList.add('active');
+            const panel = accordion.nextElementSibling;
+            panel.style.maxHeight = panel.scrollHeight + 'px';
+            accordion.addEventListener('click', function() {
+                this.classList.toggle('active');
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + 'px';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
